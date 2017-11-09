@@ -40,7 +40,7 @@ function getInfoList() {
         // 查找所有a元素，且name是readlink的
         $(list).each(function(index, element){
             var name = $(element).attr("name");
-            if (nameId == name) {
+            if (nameId === name) {
                 a = element;
             }
             // 最后一个class是s2的span
@@ -53,7 +53,7 @@ function getInfoList() {
             var title = $(font).html();
             var href = $(a).attr("href");
             var text = $(span).html();
-            if (text.length > 0 && textValue != text) {
+            if (text.length > 0 && textValue !== text) {
                 info.title = title;
                 info.href = href;
                 info.text = text;
